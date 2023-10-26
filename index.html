@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starbucks Coffee Company</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+<!-----------------Header Section-------------------------->
+
+ <header class="border-bottom fix-header bg-body-tertiary">
+    <div class="container">
+      <div class="d-flex flex-wrap p-lg-3 align-items-center justify-content-center justify-content-lg-start">
+        <a title="Starbucks Logo" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none" href="">
+          <img src="	https://www.starbucks.in/assets/icon/logo.png" alt="Logo" class="navbar-brand logo"></a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0  nav-underline">
+          <li class="">
+            <a class="nav-link link-dark active" href="">Home</a>
+          </li>
+          <li>
+            <a class="nav-link link-dark" href="">Gift</a>
+          </li>
+          <li>
+            <a class="nav-link link-dark" href="">Order</a>
+          </li>
+          <li>
+            <a class="nav-link link-dark cursor-pt">Pay</a>
+          </li>
+          <li>
+            <a class="nav-link link-dark" href="">Store</a>
+          </li>
+        </ul>
+        <div class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <div class="search-form  ps-sm-2">
+            <img src="https://www.starbucks.in/assets/icon/search.svg" alt="search" class="fa-search search-image  "
+              tabindex="0">
+            <input type="text" placeholder="Looking for something specific?"
+              class=" form-control form-input custom-search-box shadow-sm focus-ring" autocomplete="off" role="combobox"
+              aria-autocomplete="list" aria-expanded="false" aria-haspopup="listbox">
+          </div>
+        </div>
+        <div class="dropdown text-end profile-icon">
+          <a id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false"
+            class="d-block link-dark text-decoration-none" href="/profile">
+            <img src="https://www.starbucks.in/assets/icon/account_thin.svg" alt="profile icon" width="32" height="32"
+              class="rounded-circle">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="green">
+    <div class="card">
+      <div class="card-body container" id="green-card">
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h5>A world of rewards awaits you! Sign up now.</h5>
+
+          </div>
+          <div class="col-4 text-end">
+            <button class="btn btn-outline costum-btn pe-none">Know more</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!---------------Header End---------------->
+
+
+
+  <!-------------------Handipicked Section------------------------->
+  <section>
+    <div class="handpicked-section">
+      <div class="container">
+        <div class="row">
+          <h2>Handcrafted Curations</h2>
+        </div>
+      </div>
+
+      <div class="container body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-between flex-wrap">
+            <div class="item">
+              <span>
+                <img src="	https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/Bestseller.jpg" alt="">
+              </span>
+              <span>
+                <p>Bestseller</p>
+              </span>
+            </div>
+            <div class=" item">
+
+              <span>
+                <img src="	https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/Drinks.jpg" alt="">
+              </span>
+              <span>
+                <p>Drinks</p>
+              </span>
+
+            </div>
+            <div class=" item">
+              <span>
+                <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/Food.jpg" alt="">
+              </span>
+              <span>
+                <p>Food</p>
+              </span>
+
+            </div>
+            <div class=" item">
+              <span>
+                <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/Merchandise.jpg" alt="">
+              </span>
+              <span>
+                <p>Merchandise</p>
+              </span>
+
+            </div>
+            <div class=" item">
+              <span>
+                <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/CoffeeAtHome.jpg" alt="">
+              </span>
+              <span>
+                <p>Coffee At Home</p>
+              </span>
+
+            </div>
+            <div class=" item">
+              <span>
+                <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/ReadyToEat.jpg" alt="">
+              </span>
+              <span>
+                <p>Ready to Eat</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-------------------Handipicked Section--------------------->
+
+   <!-- =============================Popup============================================ -->
+
+                   <!-- popup d-flex flex-column shadow-sm rounded  -->
+         <div class="popup" id="show">
+            <div class="left-iamge">
+              <img src="https://www.starbucks.in/assets/icon/Group%20566.svg" alt="">
+            </div>
+            <div class="col-12 p-2">
+               <p class="text-center" style="max-width: 90%; margin: auto; padding:1rem;"> Please turn on Location Service from Browser settings to allow "Starbucks" to determine your location. </p>
+            </div>
+            <div class="col-12 text-center">
+              <button class="btn rounded-pill btn-sm btn-dark px-3" id="button">Close</button>
+            </div>
+            <div class="col-12 d-flex flex-row-reverse">
+              <img src="https://www.starbucks.in/assets/icon/Group45.svg" alt="">
+            </div>
+           
+         </div>
+
+   <!-- ===============================End================================================= -->
+
+     
+
+  <!----------------Slider Section------------------------>
+  <section>
+    <div class="slider-section">
+      <div class="container">
+        <div class="row">
+          <div id="carouselExample z-2" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active dark bg-img-1 d-flex  align-items-center rounded">
+                <div class=" left-image col-2">
+                  <img
+                    src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/Worldcup_Banner_Icon_4_679f6ef3e8.png"
+                    alt="">
+                </div>
+                <div class="col-8 slide-content ">
+
+                  <p class="dark">Score Big Savings With</p>
+                  <p class="dark">STARBUCKS125</p>
+                  <p class="card-title text-color-dark">Get your exclusive delivery discount code - "STARBUCKS125" - for
+                    a FLAT ₹125 on Swiggy Zomato.</p>
+                  <div class="price-text">
+                    <p class="price-title mb-0">Flat</p>
+                    <p class="price">₹ 125<span class="round-figure">.00</span></p>
+                  </div>
+                </div>
+                <button class="btn custom-button btn-success btn-lg rounded-pill px-5">Know more</button>
+              </div>
+
+              <div class="carousel-item ">
+                <div class="d-flex align-items-center dark  bg-img-2 rounded">
+                  <div class=" left-image col-2">
+                    <img src="slide-image-2.png" alt="">
+                  </div>
+                  <div class="col-8 slide-content ">
+
+                    <p class="dark"> Brew And Boo With</p>
+                    <p class="dark"> Halloween Collection</p>
+                    <p class="card-title text-color-dark"> Join the spooky fun with our Halloween Merchandise, starring
+                      hipster ghosts and a kitten on a memorable adventure!
+                    <p>
+                    <div class="price-text">
+                      <p class="price-title mb-0">Starting From</p>
+                      <p class="price">₹ 850<span class="round-figure">.00</span></p>
+                    </div>
+                  </div>
+                  <button class="btn custom-button btn-success btn-lg rounded-pill px-5">order now</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+
+                <div class="d-flex dark align-items-center bg-img-3 rounded">
+                  <div class=" left-image col-2">
+                    <img src="slider-image-3.png" alt="">
+                  </div>
+                  <div class="col-8 slide-content ">
+
+                    <p class="dark"> Arriving With A Sizzle</p>
+                    <p class="dark"> Diwali Blend</p>
+                    <p class="card-title text-color-dark"> Crafted with passion, Diwali Blend offers a flavorful,
+                      festive experience inspired by the colors & flavours of Diwali.
+                    <p>
+                    <div class="price-text">
+                      <p class="price-title mb-0">For</p>
+                      <p class="price">₹ 1100<span class="round-figure">.00</span></p>
+                    </div>
+                  </div>
+                  <button class="btn custom-button btn-success btn-lg rounded-pill px-5">order now</button>
+
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-------------------Slider Section ends----------------------------->
+
+
+
+  <!----------------------------- offers Section--------------------->
+
+  <section class="">
+    <div class="offers">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-8">
+            <h2> Latest Offerings </h2>
+          </div>
+        </div>
+
+
+        <div class="row custom-s">
+          <div class="gallary gap-4">
+            <!-- card one  -->
+
+            <div class="card" style="width: 25.5rem;">
+              <div class="card-image">
+                <img src="	https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/102253.webp"
+                  class="card-img-top" alt="...">
+              </div>
+              <div class="card-body dark " id="cardbody">
+                <div class="card-body-content">
+                  <h5 class="card-title">Pumpkin spice latte </h5>
+                  <p class="card-text">Our signature espresso and steamed milk with the celebrated flavor combination of
+                    pumpkin, cinnamon, nutmeg an </p>
+                  <div class="d-flex justify-content-between">
+                    <h4>₹ 414</h4>
+                    <a href="#" class="btn btn-success rounded-pill px-4 btn-sm">Add item</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- second card -->
+
+            <div class="card" style="width: 25.5rem;">
+              <div class="card-image">
+                <img src="	https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/102253.webp"
+                  class="card-img-top" alt="...">
+              </div>
+              <div class="card-body " id="cardbody">
+                <div class="card-body-content">
+                  <h5 class="card-title">Pumpkin spice latte </h5>
+                  <p class="card-text">Our signature espresso and steamed milk with the celebrated flavor combination of
+                    pumpkin, cinnamon, nutmeg an </p>
+                  <div class="d-flex justify-content-between">
+                    <h4>₹ 414</h4>
+                    <a href="#" class="btn btn-success rounded-pill px-4 btn-sm">Add item</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- third card -->
+
+
+            <div class="card" style="width: 25.5rem;">
+              <div class="card-image">
+                <img src="	https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/102253.webp"
+                  class="card-img-top" alt="...">
+              </div>
+              <div class="card-body " id="cardbody">
+                <div class="card-body-content">
+                  <h5 class="card-title">Pumpkin spice latte </h5>
+                  <p class="card-text">Our signature espresso and steamed milk with the celebrated flavor combination of
+                    pumpkin, cinnamon, nutmeg an </p>
+                  <div class="d-flex justify-content-between">
+                    <h4>₹ 414</h4>
+                    <a href="#" class="btn btn-success rounded-pill px-4 btn-sm">Add item</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- fourth card -->
+
+
+            <div class="card" style="width: 25.5rem;">
+              <div class="card-image">
+                <img src="	https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/102253.webp"
+                  class="card-img-top" alt="...">
+              </div>
+              <div class="card-body " id="cardbody">
+                <div class="card-body-content">
+                  <h5 class="card-title">Pumpkin spice latte </h5>
+                  <p class="card-text">Our signature espresso and steamed milk with the celebrated flavor combination of
+                    pumpkin, cinnamon, nutmeg an </p>
+                  <div class="d-flex justify-content-between">
+                    <h4>₹ 414</h4>
+                    <a href="#" class="btn btn-success rounded-pill px-4 btn-sm">Add item</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- fifth card  -->
+
+
+            <div class="card" style="width: 25.5rem;">
+              <div class="card-image">
+                <img src="	https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/102253.webp"
+                  class="card-img-top" alt="...">
+              </div>
+              <div class="card-body " id="cardbody">
+                <div class="card-body-content">
+                  <h5 class="card-title">Pumpkin spice latte </h5>
+                  <p class="card-text">Our signature espresso and steamed milk with the celebrated flavor combination of
+                    pumpkin, cinnamon, nutmeg an </p>
+                  <div class="d-flex justify-content-between">
+                    <h4>₹ 414</h4>
+                    <a href="#" class="btn btn-success rounded-pill px-4 btn-sm">Add item</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- sixth card -->
+
+
+            <div class="card" style="width: 25.5rem;">
+              <div class="card-image">
+                <img src="	https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/102253.webp"
+                  class="card-img-top" alt="...">
+              </div>
+              <div class="card-body " id="cardbody">
+                <div class="card-body-content">
+                  <h5 class="card-title">Pumpkin spice latte </h5>
+                  <p class="card-text">Our signature espresso and steamed milk with the celebrated flavor combination of
+                    pumpkin, cinnamon, nutmeg an </p>
+                  <div class="d-flex justify-content-between">
+                    <h4>₹ 414</h4>
+                    <a href="#" class="btn btn-success rounded-pill px-4 btn-sm">Add item</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- seventh card -->
+
+            <div class="card" style="width: 25.5rem;">
+              <div class="card-image">
+                <img src="	https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/102253.webp"
+                  class="card-img-top" alt="...">
+              </div>
+              <div class="card-body" id="cardbody">
+                <div class="card-body-content">
+                  <h5 class="card-title">Pumpkin spice latte </h5>
+                  <p class="card-text">Our signature espresso and steamed milk with the celebrated flavor combination of
+                    pumpkin, cinnamon, nutmeg an </p>
+                  <div class="d-flex justify-content-between">
+                    <h4>₹ 414</h4>
+                    <a href="#" class="btn btn-success rounded-pill px-4 btn-sm">Add item</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="fav-section">
+      <span class="leaf-image">
+        <img src="	https://www.starbucks.in/assets/icon/greyleafright.svg" alt="">
+      </span>
+      <div class="container">
+        <div class="row justify-content-between p-2">
+          <div class="col-12 col-sm-8">
+            <h2><span> Barista Recommends</span></h2>
+          </div>
+          <div class="col-4 d-none d-sm-block text-end">
+            <h6><span>View Menu</span></h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card col-8" id="rec-item">
+              <div class="card-body">
+                <div class="d-flex align-items-center  ">
+                  <img class="recommend-image"
+                    src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/112570.webp" alt="">
+                  <div class="d-flex flex-column justify-content-center">
+                    <span class="ms-3">
+                      <img class="food-mark mb-2" src="https://www.starbucks.in/assets/icon/veg.svg" alt="">
+                    </span>
+                    <p class="card-text ms-3">Strawberry Milkshake</p>
+                    <span class="ms-3 text-muted "> TALL(Tall Strawberry Milkshake) </span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span>
+                    ₹ 367
+                  </span>
+                  <a href="#" class="btn btn-success rounded-pill btn-sm ms-5 px-3">Add item</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card col-8" id="rec-item">
+              <div class="card-body">
+                <div class="d-flex align-items-center  ">
+                  <img class="recommend-image"
+                    src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/112570.webp" alt="">
+                  <div class="d-flex flex-column justify-content-center">
+                    <span class="ms-3">
+                      <img class="food-mark mb-2" src="https://www.starbucks.in/assets/icon/veg.svg" alt="">
+                    </span>
+                    <p class="card-text ms-3">Strawberry Milkshake</p>
+                    <span class="ms-3 text-muted "> TALL(Tall Strawberry Milkshake) </span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span>
+                    ₹ 367
+                  </span>
+                  <a href="#" class="btn btn-success rounded-pill btn-sm ms-5 px-3">Add item</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="vedio-section pt-4 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-8">
+            <h2><span>
+                Learn more about the world of coffee!
+              </span></h2>
+          </div>
+          <div class="col-4 text-end">
+            <h6 class="d-none d-sm-block ">Discover More</h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 last-image">
+            <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/C_A_F_E_BLOG_WEB_5e2635de8d.jpg"
+              alt="" style="width: 100%; height:100%; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer  -->
+
+  <footer>
+    <div class="footer">
+
+      <div class="footer-color" style="background-color: #0e382c;">
+        <div class="footer-s">
+
+          <div class="show d-none d-sm-block">
+
+
+            <div class="container">
+              <div class="row mb-5">
+                <div class="col-md-2 mb-md-0 mb-4">
+                  <img alt="Logo" src="https://www.starbucks.in/assets/icon/logo.png"
+                    style="width: 62px; height: 62px;">
+                </div>
+                <div class="col-md-2 mb-md-0 mb-4">
+                  <h3 class="footer-heading">About Us <span class="arrow arrow-top arrow-bottom">
+                    </span></h3>
+                  <ul class="box list-unstyled">
+                    <li>
+                      <a title="Our Heritage"> Our Heritage </a>
+                    </li>
+                  </ul>
+                  <ul class="box list-unstyled">
+                    <li>
+                      <a title="Our Company"> Our Company </a>
+                    </li>
+                  </ul>
+                  <ul class="box list-unstyled">
+                    <li><a title="Coffeehouse"> Coffeehouse </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-2 mb-md-0 mb-4">
+                  <h3 class="footer-heading">Responsibility <span _ngcontent-nqd-c68=""
+                      class="arrow arrow-top arrow-bottom"></span>
+                  </h3>
+                  <ul class="box list-unstyled">
+                    <li><a title="Community"> Community </a>
+                    </li>
+                  </ul>
+                  <ul class="box list-unstyled">
+                    <li><a title="Ethical Sourcing"> Ethical Sourcing </a>
+                    </li>
+                  </ul>
+                  <ul class="box list-unstyled">
+                    <li>
+                      <a title="Environment"> Environment </a>
+                    </li>
+                  </ul>
+                  <ul class="box list-unstyled">
+                    <li>
+                      <a title="Diversity"> Diversity </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-2 mb-md-0 mb-4">
+                  <h3 class="footer-heading">Quick Links <span class="arrow arrow-top arrow-bottom"></span>
+                  </h3>
+                  <ul class="box list-unstyled">
+                    <li>
+                      <a title="Careers"> Careers </a>
+                    </li>
+                  </ul>
+                  <ul class="box list-unstyled">
+                    <li><a _ngcontent-nqd-c68="" title="Season's Gifting"> Season's Gifting </a>
+                    </li>
+                  </ul>
+                  <ul class="box list-unstyled">
+                    <li>
+                      <a title="FAQs"> FAQs </a>
+                    </li>
+                  </ul>
+                  <ul class="box list-unstyled">
+                    <li>
+                      <a title="Customer Service"> Customer Service </a>
+                    </li>
+                  </ul>
+                  <ul class="box list-unstyled">
+                    <li><a _ngcontent-nqd-c68="" title="Delivery"> Delivery </a>
+                    </li>
+                  </ul>
+                  <ul class="box list-unstyled">
+                    <li><a title="Privacy Policy"> Privacy Policy </a>
+                    </li>
+                  </ul>
+                  <ul class="box list-unstyled">
+                    <li><a title="Starbucks Rewards Day Offer"> Starbucks Rewards Day Offer </a>
+                    </li>
+                  </ul>
+                  <ul class="box list-unstyled">
+                    <li><a title="Offer for Beverage Subscription at Starbucks."> Offer for Beverage Subscription at
+                        Starbucks. </a>
+                    </li>
+                  </ul>
+                  <ul class="box list-unstyled">
+                    <li><a _ngcontent-nqd-c68="" title="Terms and Conditions"> Terms and Conditions </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4 mb-md-0 mb-4 d-flex">
+                  <div>
+                    <h3 class="footer-heading">SOCIAL MEDIA </h3>
+                    <ul class="ft-social-list d-flex me-5">
+                      <li>
+                        <a href="https://www.instagram.com/starbucksindia/" target="_blank">
+                          <img src="	https://www.starbucks.in/assets/icon/instagram.svg" alt="instagram"
+                            style="width: 35px; height: 35px;">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.facebook.com/starbucksindia" target="_blank">
+                          <img src="https://www.starbucks.in/assets/icon/facebook.svg" alt="facebook"
+                            style="width: 35px; height: 35px;">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/starbucksindia" target="_blank">
+                          <img src="	https://www.starbucks.in/assets/icon/twitter.svg" alt="twitter"
+                            style="width: 35px; height: 35px;">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="img-wrapper text-right"><a
+                      href="https://apps.apple.com/in/app/starbucks-india/id1210203958">
+                      <img src="https://www.starbucks.in/assets/images/appstoreiOS.png" alt="iOS-store" class="pb-2"
+                        style="width: 194px; height: 62px;">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.starbucks.in">
+                      <img src="https://www.starbucks.in/assets/images/appstoreAndroid.png" alt="Andorid-store"
+                        style="width: 194px; height: 62px;">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="hide d-block d-sm-none">
+            <div class="row">
+              <div class="col-md-2 mb-md-0 mb-4 ms-2">
+                <img alt="Logo" src="https://www.starbucks.in/assets/icon/logo.png" style="width: 62px; height: 62px;">
+              </div>
+
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item mt-2">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      About Us
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <ul class="box list-unstyled">
+                        <li>
+                          <a title="Our Heritage"> Our Heritage </a>
+                        </li>
+                      </ul>
+                      <ul class="box list-unstyled">
+                        <li>
+                          <a title="Our Company"> Our Company </a>
+                        </li>
+                      </ul>
+                      <ul class="box list-unstyled">
+                        <li><a title="Coffeehouse"> Coffeehouse </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Responsibility
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <ul class="box list-unstyled">
+                        <li><a title="Community"> Community </a>
+                        </li>
+                      </ul>
+                      <ul class="box list-unstyled">
+                        <li><a title="Ethical Sourcing"> Ethical Sourcing </a>
+                        </li>
+                      </ul>
+                      <ul class="box list-unstyled">
+                        <li>
+                          <a title="Environment"> Environment </a>
+                        </li>
+                      </ul>
+                      <ul class="box list-unstyled">
+                        <li>
+                          <a title="Diversity"> Diversity </a>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Quick Links
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <ul class="box list-unstyled">
+                        <li>
+                          <a title="Careers"> Careers </a>
+                        </li>
+                      </ul>
+                      <ul class="box list-unstyled">
+                        <li><a title="Season's Gifting"> Season's Gifting </a>
+                        </li>
+                      </ul>
+                      <ul class="box list-unstyled">
+                        <li>
+                          <a title="FAQs"> FAQs </a>
+                        </li>
+                      </ul>
+                      <ul class="box list-unstyled">
+                        <li>
+                          <a title="Customer Service"> Customer Service </a>
+                        </li>
+                      </ul>
+                      <ul class="box list-unstyled">
+                        <li><a title="Delivery"> Delivery </a>
+                        </li>
+                      </ul>
+                      <ul class="box list-unstyled">
+                        <li><a title="Privacy Policy"> Privacy Policy </a>
+                        </li>
+                      </ul>
+                      <ul class="box list-unstyled">
+                        <li><a title="Starbucks Rewards Day Offer"> Starbucks Rewards Day Offer </a>
+                        </li>
+                      </ul>
+                      <ul class="box list-unstyled">
+                        <li><a title="Offer for Beverage Subscription at Starbucks."> Offer for Beverage Subscription at
+                            Starbucks. </a>
+                        </li>
+                      </ul>
+                      <ul class="box list-unstyled">
+                        <li><a title="Terms and Conditions"> Terms and Conditions </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-md-0 mb-4 d-flex">
+                <div>
+                  <h3 class="footer-heading">SOCIAL MEDIA </h3>
+                  <ul class="ft-social-list d-flex me-5">
+                    <li>
+                      <a href="https://www.instagram.com/starbucksindia/" target="_blank">
+                        <img src="	https://www.starbucks.in/assets/icon/instagram.svg" alt="instagram"
+                          style="width: 35px; height: 35px;">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/starbucksindia" target="_blank">
+                        <img src="https://www.starbucks.in/assets/icon/facebook.svg" alt="facebook"
+                          style="width: 35px; height: 35px;">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/starbucksindia" target="_blank">
+                        <img src="	https://www.starbucks.in/assets/icon/twitter.svg" alt="twitter"
+                          style="width: 35px; height: 35px;">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="img-wrapper text-right"><a
+                    href="https://apps.apple.com/in/app/starbucks-india/id1210203958">
+                    <img src="https://www.starbucks.in/assets/images/appstoreiOS.png" alt="iOS-store" class="pb-2"
+                      style="width: 194px; height: 62px;">
+                  </a>
+                  <a href="https://play.google.com/store/apps/details?id=com.starbucks.in">
+                    <img src="https://www.starbucks.in/assets/images/appstoreAndroid.png" alt="Andorid-store"
+                      style="width: 194px; height: 62px;">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="last-section" style="background-color: #0e382c;">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+              <ul class="d-flex ">
+                <li>
+                  <a href="/">Web Accessiblity</a>
+                </li>
+                <li>
+                  <a title="Privacy Statement" href="/">
+                    Privacy Statement
+                  </a>
+                </li>
+                <li>
+                  <a href="">Terms of Use</a>
+                </li>
+                <li>
+                  <a title="Contact Us" href="/profile/help-center">Contact Us</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="col-12 col-md-4 copyright text-end justify-content-md-center">
+              <a href="/">© 2023 Starbucks Coffee Company. All rights reserved.</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
